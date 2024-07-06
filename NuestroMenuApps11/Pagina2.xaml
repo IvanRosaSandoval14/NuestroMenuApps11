@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuestroMenuApps11.Pagina2"
+             Title="SUPERFICIE TRIANGULO">
+
+    <StackLayout Padding="20">
+        <Image Source="triangulo.jpeg" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
+        <!-- Muestra una imagen del triángulo-->
+
+        <Label Text="Base del triángulo:" />
+        <!-- Muestra un texto estático como etiqueta que sirve de título o descripción para la entrada de la base del triángulo -->
+
+        <Entry x:Name="BaseEntry" Placeholder="Base en unidades" Keyboard="Numeric" />
+        <!-- Define una entrada de texto para que el usuario escriba la base del triángulo-->
+
+        <Label Text="Altura del triángulo:" />
+        <!-- Muestra una etiqueta con el texto "Altura del triángulo:" -->
+
+        <Entry x:Name="AlturaEntry" Placeholder="Altura en unidades" Keyboard="Numeric" />
+        <!-- Define una entrada de texto para que el usuario escriba la altura del triángulo -->
+
+        <Button Text="Calcular Superficie" Clicked="CalcularSuperficie_Clicked" />
+        <!-- Define un botón con el texto "Calcular Superficie" -->
+
+        <Label x:Name="ResultadoLabel" FontSize="Large" TextColor="DarkGreen"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        <!-- Define una etiqueta para mostrar el resultado del cálculo de la superficie del triángulo-->
+
+    </StackLayout>
+</ContentPage>

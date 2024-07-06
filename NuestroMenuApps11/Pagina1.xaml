@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuestroMenuApps11.Pagina1"
+             Title="CAMBIO CLIENTE">
+    <StackLayout Padding="20" Spacing="10">
+     <Image Source="pago.jpeg" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
+
+     <Label Text="Costo del Artículo:" />
+     <Entry x:Name="CostoEntry" Keyboard="Numeric" />
+
+     <Label Text="Dinero Entregado:" />
+     <Entry x:Name="DineroEntregadoEntry" Keyboard="Numeric" />
+
+     <Button Text="Calcular Cambio" Clicked="OnCalcularCambioClicked" />
+
+     <Label x:Name="ResultadoLabel" FontSize="Large" TextColor="Wheat" />
+ </StackLayout>
+</ContentPage>

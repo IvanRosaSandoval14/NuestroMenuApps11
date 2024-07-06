@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuestroMenuApps11.Pagina4"
+             Title="COBRO GASOLINERA">
+    
+    <StackLayout Padding="20" Spacing="10">
+
+        <Image Source="gasolinera.jpeg" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Label Text="Cantidad de Galones Surtidos:" />
+        <Entry x:Name="GalonesEntry" Keyboard="Numeric" />
+
+        <Label Text="Precio por Litro (en moneda local):" />
+        <Entry x:Name="PrecioPorLitroEntry" Keyboard="Numeric" />
+
+        <Button Text="Calcular Cobro" Clicked="OnCalcularCobroClicked" />
+
+        <Label x:Name="ResultadoLabel" FontSize="Large" TextColor="Wheat" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuestroMenuApps11.Pagina3"
+             Title=" MEDIDAS DINOSAURIO">
+    <StackLayout Padding="20">
+        <Image Source="Dino.jpeg" Aspect="AspectFit" HeightRequest="200" />
+        <!-- Muestra la imagen del dinosaurio-->
+
+        <Label Text="Nombre del dinosaurio:" />
+        <!-- Muestra un texto de etiqueta que pide el nombre del dionsaurio -->
+
+        <Entry x:Name="NombreEntry" Placeholder="Nombre del dinosaurio" />
+        <!-- Define una entrada de texto para que el usuario escriba el nombre del dinosaurio -->
+
+        <Label Text="Peso en kg:" />
+        <!-- Muestra una etiqueta con el texto "Peso en kg:" -->
+
+        <Entry x:Name="PesoKgEntry" Placeholder="Peso en kg" Keyboard="Numeric" />
+        <!-- Define una entrada de texto para el peso del dinosaurio en kilogramos -->
+
+        <Label Text="Altura en metros:" />
+        <!-- Muestra una etiqueta con el texto "Altura en metros:" -->
+
+        <Entry x:Name="AlturaMetrosEntry" Placeholder="Altura en metros" Keyboard="Numeric" />
+        <!-- Define una entrada de texto para la altura del dinosaurio en metros -->
+
+        <Button Text="Convertir" Clicked="ConvertButton_Clicked" />
+        <!-- Define un botón con el texto "Convertir" -->
+
+        <Label x:Name="ResultadoLabel" FontSize="Large" TextColor="Wheat"
+           HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        <!-- Define una etiqueta para mostrar el resultado de la conversión -->
+
+    </StackLayout>
+</ContentPage>

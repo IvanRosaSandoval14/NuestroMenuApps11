@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NuestroMenuApps11.MainPage">
+
+    <StackLayout>
+        <Label Text="MENU DE APLICACIONES" 
+    VerticalOptions="CenterAndExpand" 
+     HorizontalOptions="CenterAndExpand" 
+     FontSize="30" 
+     TextColor="White" />
+
+        <Button Text="CAMBIO CLIENTE" Clicked="OnPage1ButtonClicked"/>
+        <Button Text="SUPERFICIE TRIANGULO" Clicked="OnPage2ButtonClicked"/>
+        <Button Text=" MEDIDAS DINOSAURIO " Clicked="OnPage3ButtonClicked"/>
+        <Button Text="COBRO GASOLINERA" Clicked="OnPage4ButtonClicked"/>
+        <Button Text="APP NAVEGACION4030347" Clicked="OnPage5ButtonClicked"/>
+        <Button Text="APP SURVEY" Clicked="OnPage6ButtonClicked"/>
+    </StackLayout>
+
+</ContentPage>
